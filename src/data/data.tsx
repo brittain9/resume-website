@@ -3,11 +3,8 @@ import {AcademicCapIcon, ArrowDownTrayIcon, CalendarIcon, MapIcon, SparklesIcon}
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import profilepic from '../images/profilepic.jpg';
 import {
   About,
@@ -26,7 +23,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Alexander Portfolio',
-  description: 'Site for my resume',
+  description: 'my site',
 };
 
 /**
@@ -59,9 +56,9 @@ export const heroData: Hero = {
         in both business and technology
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can catch me on the trail on my <strong className="text-stone-100">Bike</strong>,
+        drinking <strong className="text-stone-100">Cold Brew</strong> at a coffee shop, or finding live music venues in{' '}
+        <strong className="text-stone-100">Austin, Texas</strong>.
       </p>
     </>
   ),
@@ -85,13 +82,11 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I'm passionate about creating applications that add real value to users' lives. With three years of programming experience, I've built a strong foundation in C# and .NET and am enhancing my skills with React. My attention to detail ensures high-quality work, and I thrive in collaborative environments. Outside of tech, I stay active by biking and going to the gym, enjoy reading and being outdoors, and am eager to explore new cultures and travel to new places.`,
   aboutItems: [
     {label: 'Location', text: 'Austin, TX', Icon: MapIcon},
     {label: 'Age', text: '23', Icon: CalendarIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Mountain Biking, Live Music, Outdoors', Icon: SparklesIcon},
     {label: 'Study', text: 'University of Texas at Austin', Icon: AcademicCapIcon},
   ],
 };
@@ -101,40 +96,67 @@ export const aboutData: About = {
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'December 2024',
+    location: 'Unversity of Texas at Austin',
+    title: 'Bachelor of Business Administration in Management Information Systems',
+    link: 'https://www.mccombs.utexas.edu/faculty-and-research/departments/irom/degree-programs/undergraduate/mis/',
+    content: (
+      <p>
+        During my time at the University of Texas at Austin, I have developed a strong understanding of the intersection
+        between business and technology. I honed my technical skills in SQL, Python, and C#, and enhanced my teamwork
+        abilities through collaborative projects. This combination of technical expertise and collaborative experience
+        enables me to effectively tackle complex organizational challenges and work well within a team.
+      </p>
+    ),
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'June 2024 - Present',
+    location: 'Data Annotation',
+    title: 'AI Data Annotator',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul className="list-disc pl-5">
+        <li>
+          Utilized advanced technical skills to evaluate AI model outputs across coding, math, and reasoning tasks,
+          ensuring high standards of correctness and adherence to instructions.
+        </li>
+        <li>
+          Demonstrated proficiency in a diverse set of programming languages, including C languages, Python, Bash,
+          TypeScript, and more, to thoroughly test and verify code outputs.
+        </li>
+        <li>
+          Provided comprehensive and detailed write-ups for each task, offering insights into model performance and
+          rating responses based on quality and accuracy.
+        </li>
+        <li>
+          Possess a deep understanding of large language models, showcasing familiarity with industry terminology and
+          the ability to effectively utilize and navigate these advanced AI systems.
+        </li>{' '}
+      </ul>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'August 2021 - October 2022',
+    location: 'University of Texas University Unions',
+    title: 'Student Facility Manager',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul className="list-disc pl-5">
+        <li>
+          Ensured a safe environment for an average of 6,500 daily visitors by conducting hourly safety checks and
+          coordinating with multiple departments.
+        </li>
+        <li>
+          Managed detailed logs using Microsoft Word and communicated updates via Outlook, demonstrating strong
+          organizational and communication skills.
+        </li>
+        <li>
+          Delivered exceptional customer service at the hospitality desk by assisting visitors with directions, tasks,
+          and safety measures, including distributing masks and self-test kits.
+        </li>
+        <li>Enhanced my ability to prioritize safety and multitask effectively in a high-traffic environment.</li>
+      </ul>
     ),
   },
 ];
@@ -144,19 +166,19 @@ export const experience: TimelineItem[] = [
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Business',
     skills: [
       {
-        name: 'English',
-        level: 10,
+        name: 'Communication',
+        level: 9,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'Project Management',
+        level: 8,
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'Data Analysis',
+        level: 7,
       },
     ],
   },
@@ -164,16 +186,16 @@ export const skills: SkillGroup[] = [
     name: 'Frontend development',
     skills: [
       {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
+        name: 'HTML/CSS',
         level: 7,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'React',
+        level: 5,
+      },
+      {
+        name: 'Blazor',
+        level: 4,
       },
     ],
   },
@@ -181,33 +203,33 @@ export const skills: SkillGroup[] = [
     name: 'Backend development',
     skills: [
       {
-        name: 'Node.js',
+        name: 'ASP.NET',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'SQL',
+        level: 7,
       },
       {
-        name: 'Golang',
-        level: 4,
+        name: 'Python',
+        level: 6,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Tools and Frameworks',
     skills: [
       {
-        name: 'React Native',
+        name: 'Git',
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: '.NET',
+        level: 7,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Azure',
+        level: 5,
       },
     ],
   },
@@ -218,41 +240,22 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage1,
-  },
-  {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage2,
-  },
-  {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage3,
-  },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Wikipedia Quiz App',
+    description: 'short description here.',
+    url: 'https://github.com/brittain9',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
+    title: 'Project title 2',
+    description: 'short description here',
+    url: 'https://github.com/brittain9',
+    image: porfolioImage2,
   },
 ];
 
 /**
  * Contact section
  */
-
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
   description: "Interested in connecting? Reach out anytime – I'd love to chat!",

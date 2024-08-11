@@ -90,21 +90,8 @@ export interface TimelineItem {
   date: string;
   location: string;
   title: string;
+  link?: string;
   content: JSX.Element;
-}
-
-/**
- * Testimonial section
- */
-export interface TestimonialSection {
-  imageSrc?: string | StaticImageData;
-  testimonials: Testimonial[];
-}
-
-export interface Testimonial {
-  image?: string;
-  name: string;
-  text: string;
 }
 
 /**
@@ -122,9 +109,6 @@ export const ContactType = {
   Location: 'Location',
   Github: 'Github',
   LinkedIn: 'LinkedIn',
-  Facebook: 'Facebook',
-  Twitter: 'Twitter',
-  Instagram: 'Instagram',
 } as const;
 
 export type ContactType = (typeof ContactType)[keyof typeof ContactType];
