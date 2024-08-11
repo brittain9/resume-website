@@ -22,8 +22,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Alexander Portfolio',
-  description: 'my site',
+  title: "Alexander's Portfolio",
+  description: 'A site to showcase my skills and experience',
 };
 
 /**
@@ -53,7 +53,7 @@ export const heroData: Hero = {
         I'm a student at <strong className="text-stone-100">The University of Texas at Austin</strong>, currently
         studying
         <strong className="text-stone-100"> Management Information Systems</strong>, where I get to explore my interests
-        in both business and technology
+        in both business and technology.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can catch me on the trail on my <strong className="text-stone-100">Bike</strong>,
@@ -82,7 +82,10 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm passionate about creating applications that add real value to users' lives. With three years of programming experience, I've built a strong foundation in C# and .NET and am enhancing my skills with React. My attention to detail ensures high-quality work, and I thrive in collaborative environments. Outside of tech, I stay active by biking and going to the gym, enjoy reading and being outdoors, and am eager to explore new cultures and travel to new places.`,
+  description: `I'm passionate about creating engaging applications that add real value to users' lives. 
+  With three years of programming experience, I've built a strong foundation in C# and .NET and am enhancing my skills with React. 
+  My attention to detail ensures high-quality work, and I thrive in collaborative environments. 
+  Outside of tech, I stay active by biking and going to the gym, enjoy reading and being outdoors, and am eager to get involved in new activites and travel to new places.`,
   aboutItems: [
     {label: 'Location', text: 'Austin, TX', Icon: MapIcon},
     {label: 'Age', text: '23', Icon: CalendarIcon},
@@ -119,21 +122,25 @@ export const experience: TimelineItem[] = [
     content: (
       <ul className="list-disc pl-5">
         <li>
-          Utilized advanced technical skills to evaluate AI model outputs across coding, math, and reasoning tasks,
-          ensuring high standards of correctness and adherence to instructions.
+          {' '}
+          Utilize advanced technical skills to evaluate AI model outputs across coding, math, and reasoning tasks,
+          ensuring high standards of correctness and adherence to instructions.{' '}
         </li>
         <li>
-          Demonstrated proficiency in a diverse set of programming languages, including C languages, Python, Bash,
-          TypeScript, and more, to thoroughly test and verify code outputs.
+          {' '}
+          Contribute to RLHF (Reinforcement Learning from Human Feedback) by providing detailed evaluations of AI
+          outputs, offering insights on performance and rating responses to refine model behavior.{' '}
         </li>
         <li>
-          Provided comprehensive and detailed write-ups for each task, offering insights into model performance and
-          rating responses based on quality and accuracy.
+          {' '}
+          Demonstrate proficiency in a diverse set of programming languages, including C languages, Python, Bash,
+          TypeScript, and more, to thoroughly test and verify code outputs.{' '}
         </li>
         <li>
-          Possess a deep understanding of large language models, showcasing familiarity with industry terminology and
-          the ability to effectively utilize and navigate these advanced AI systems.
-        </li>{' '}
+          {' '}
+          Leverage deep understanding of large language models, showcasing familiarity with industry terminology and the
+          ability to effectively utilize and navigate these advanced AI systems.{' '}
+        </li>
       </ul>
     ),
   },
