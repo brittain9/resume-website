@@ -253,11 +253,11 @@ export const portfolioItems: PortfolioItem[] = [
     bulletPoints: [
       'Fetches random Wikipedia articles',
       'Generates multiple-choice questions',
-      'Tracks previous user quizes'
+      'Tracks previous user quizes',
     ],
     technologies: ['React', 'ASP.NET Core', 'Wikipedia API', 'Microsoft Semantic Kernel'],
-    date: 'July 2024'
-  }
+    date: 'July 2024',
+  },
 ];
 
 /**
