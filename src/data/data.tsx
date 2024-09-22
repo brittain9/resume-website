@@ -3,8 +3,7 @@ import {AcademicCapIcon, ArrowDownTrayIcon, CalendarIcon, MapIcon, SparklesIcon}
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+import wikiquizImage from '../images/portfolio/wikiquiz.jpg';
 import profilepic from '../images/profilepic.jpg';
 import {
   About,
@@ -248,16 +247,17 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Wikipedia Quiz App',
-    description: 'short description here.',
+    description: 'A web app for generating quizes on millions of different topics in nine languages.',
     url: 'https://github.com/brittain9',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Project title 2',
-    description: 'short description here',
-    url: 'https://github.com/brittain9',
-    image: porfolioImage2,
-  },
+    image: wikiquizImage,
+    bulletPoints: [
+      'Fetches random Wikipedia articles',
+      'Generates multiple-choice questions',
+      'Tracks previous user quizes'
+    ],
+    technologies: ['React', 'ASP.NET Core', 'Wikipedia API', 'Microsoft Semantic Kernel'],
+    date: 'July 2024'
+  }
 ];
 
 /**
