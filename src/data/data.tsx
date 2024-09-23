@@ -21,7 +21,7 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: "Alexander's Portfolio",
+  title: "Alexander Brittain",
   description: 'A site to showcase my skills and experience',
 };
 
@@ -55,8 +55,8 @@ export const heroData: Hero = {
         in both business and technology.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me on the trail on my <strong className="text-stone-100">Bike</strong>,
-        drinking <strong className="text-stone-100">Cold Brew</strong> at a coffee shop, or finding live music venues in{' '}
+        In my free time time, you can catch me staying active in the <strong className="text-stone-100">gym</strong>,
+        studying at a <strong className="text-stone-100">coffee shop</strong>, or exploring{' '}
         <strong className="text-stone-100">Austin, Texas</strong>.
       </p>
     </>
@@ -82,13 +82,13 @@ export const heroData: Hero = {
 export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `I'm passionate about creating engaging applications that add real value to users' lives. 
-  With three years of programming experience, I've built a strong foundation in C# and .NET and am enhancing my skills with React. 
+  With three years of programming experience, I've built a strong foundation in the .NET ecosystem and am enhancing my frontend skills with React. 
   My attention to detail ensures high-quality work, and I thrive in collaborative environments. 
-  Outside of tech, I stay active by biking and going to the gym, enjoy reading and being outdoors, and am eager to get involved in new activites and travel to new places.`,
+  Outside of work, I stay active by biking and going to the gym, and I enjoy reading and being outdoors`,
   aboutItems: [
     {label: 'Location', text: 'Austin, TX', Icon: MapIcon},
     {label: 'Age', text: '23', Icon: CalendarIcon},
-    {label: 'Interests', text: 'Mountain Biking, Live Music, Outdoors', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Mountain Biking, Live Music, Jui Jitsu', Icon: SparklesIcon},
     {label: 'Study', text: 'University of Texas at Austin', Icon: AcademicCapIcon},
   ],
 };
